@@ -132,7 +132,7 @@ class BertEncoder(nn.Module):
         connect_embeddings = torch.cat((sentence_embeddings, label_embeddings), dim=1)
         outputs = self.lin(connect_embeddings)
         outputs = self.drop(outputs)
-        outputs = self.attention(connect_embeddings)[0]+ sentence_embeddings
+        outputs = 0.9* self.attention(connect_embeddings)[0] + 0.1 * sentence_embeddings
         
         return outputs[:,0,:]
         
