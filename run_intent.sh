@@ -1,13 +1,10 @@
 cuda=0
 FreezeLayer=6
 sample=100
-commont=Bert-PN-addQ-one-bert
+commont=Bert-PN-addQ-CE-att
 k=4
 for path in 01 02 03 04 05;
 do
-    
-    sample=20
-
     python ./src_org/main.py \
         --dataset Banking77 \
         --dataFile data/BANKING77/few_shot/${path} \
