@@ -475,14 +475,14 @@ def get_label_dict(args):
         return _amazon_label_dict
     elif args.dataset == 'HuffPost':
         return _huffpost_label_dict
-    elif args.dataset == 'banking77':
+    elif args.dataset == 'Banking77':
         return _banking77_label_dict
-    elif args.dataset == 'clinc150':
+    elif args.dataset == 'Clinc150':
         return _clinc150_label_dict
     elif args.dataset == 'Reuters':
         return _reuters_label_dict
-    elif args.dataset == 'liu':
+    elif args.dataset == 'Liu':
         return _liu_label_dict
-    elif args.dataset == 'hwu64':
+    elif args.dataset == 'Hwu64':
         return _hwu64_label_dict
 
