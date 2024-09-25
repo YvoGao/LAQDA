@@ -110,6 +110,9 @@ def get_parser():
     parser.add_argument('--patience',
                         type=int,
                         default=20)
+    parser.add_argument('--la',
+                        type=int,
+                        default=1)
 
     return parser
 
